@@ -1,0 +1,85 @@
+.notification {
+    cursor: pointer;
+    margin-right: 50px;
+    line-height: 60px;
+    z-index: 1;
+}
+
+.notification span {
+    background: #f00;
+    padding: 7px;
+    border-radius: 50%;
+    color: #fff;
+    vertical-align: top;
+    margin-left: -25px;
+}
+
+.notification img {
+    display: inline-block;
+    width: 40px;
+    margin-top: 20px;
+}
+
+.notification:hover {
+    opacity: .7;
+}
+
+
+
+.notifi-box {
+    overflow: scroll;
+    width: 300px;
+    background-color: #fcfcfc;
+    position: absolute;
+    top: 63px;
+    right: 35px;
+    opacity: 10;
+    display: none;
+    z-index: 1;
+    /* transition: 1s opacity, 250ms height; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+}
+
+.notifi-box h2 {
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #999;
+}
+
+.notifi-box h2 span {
+    color: #f00;
+}
+
+.notifi-item {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    padding: 15px 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.notifi-item:hover {
+    background-color: #eee;
+    z-index: 1;
+}
+
+.notifi-item img {
+    display: block;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.notifi-item .text h4 {
+    color: #777;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.notifi-item .text p {
+    color: #aaa;
+    font-size: 12px;
+}

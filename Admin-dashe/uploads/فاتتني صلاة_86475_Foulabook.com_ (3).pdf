@@ -1,0 +1,8 @@
+<br />
+<b>Warning</b>:  Undefined variable $connection in <b>D:\xampp\htdocs\pfe_test\User-space\download.php</b> on line <b>37</b><br />
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in D:\xampp\htdocs\pfe_test\User-space\download.php:37
+Stack trace:
+#0 D:\xampp\htdocs\pfe_test\User-space\download.php(37): mysqli_query(NULL, 'UPDATE files SE...')
+#1 {main}
+  thrown in <b>D:\xampp\htdocs\pfe_test\User-space\download.php</b> on line <b>37</b><br />

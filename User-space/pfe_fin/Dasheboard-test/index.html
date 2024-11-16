@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/framework.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="css/boxicons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-------------------------------------------------Side Bar-------------------------------------------------->
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <img src="imgs/logo.png" class="logo" alt="">
+      <h3 class="hide">Logo</h3>
+    </div>
+
+    <div class="search1">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder="Quick Search ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <div class="active-tab"></div>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="index.html" class="active" data-active="0">
+            <div class="icon">
+              <i class='bx bx-home-alt' aria-hidden="true"></i>
+              <i class='bx bxs-home'></i>
+            </div>
+            <span class="link hide">Acceuil</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="Etudiants.html" data-active="1">
+            <div class="icon">
+              <i class='bx bxs-user-rectangle' aria-hidden="true"></i>
+              <i class='bx bxs-user-account'></i>
+            </div>
+            <span class="link hide">les tâches</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="#" data-active="2">
+            <div class="icon">
+              <i class='bx bx-message-square-detail'></i>
+              <i class='bx bxs-message-square-detail'></i>
+            </div>
+            <span class="link hide">Messages</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="#" data-active="3">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Rapports et Statistics</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span class="show">Acceuil</span>
+          <span>les tâches</span>
+          <span>Messages</span>
+          <span>Rapports et Statistics</span>
+        </div>
+      </ul>
+
+      <h4 class="hide">Shortcuts</h4>
+
+      <ul>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="#" data-active="4">
+            <div class="icon">
+              <i class='bx bx-qr-scan'></i>
+              <i class='bx bx-qr-scan'></i>
+            </div>
+            <span class="link hide">Scanner le code QR</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="#" data-active="5">
+            <div class="icon">
+              <i class='bx bx-add-to-queue'></i>
+              <i class='bx bxs-add-to-queue'></i>
+            </div>
+            <span class="link hide">Nouvelle annonce</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="#" data-active="6">
+            <div class="icon">
+              <i class='bx bx-cog'></i>
+              <i class='bx bxs-cog'></i>
+            </div>
+            <span class="link hide">Settings</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span class="show">Scanner le code Qr</span>
+          <span>Nouvelle annonce</span>
+          <span>Settings</span>
+        </div>
+      </ul>
+    </div>
+
+
+  </nav>
+  <!------------------------------------------------------------------------------------------------------->
+  <div class="page d-flex">
+    <div class="content w-full">
+      <!-- Start Head -->
+      <div class="head bg-white p-15 between-flex">
+        <div class="search p-relative">
+
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notification p-relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img src="imgs/face-1.png" alt="" />
+        </div>
+      </div>
+      <!-- End Head -->
+      <h1 class="p-relative">Dashboard</h1>
+      <div class="wrapper d-grid gap-20">
+        <!-- Start Welcome Widget -->
+        <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
+          <div class="intro p-20 d-flex space-between bg-white">
+            <div>
+              <h2 class="m-0">Welcome</h2>
+              <p class="c-grey mt-5"> SEGHIR</p>
+            </div>
+            <img class="hide-mobile" src="imgs/welcome2.png" alt="" />
+          </div>
+          <img src="imgs/face-1.png" alt="" class="avatar" />
+          <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile bg-eee">
+            <div>souha seghir <span class="d-block c-grey fs-14 mt-10">STUDENT</span></div>
+            <div> 0988621<span class="d-block c-grey fs-14 mt-10">appogee</span></div>
+            <div>H12458055 <span class="d-block c-grey fs-14 mt-10">CNE</span></div>
+          </div>
+          <a href="profile.html" class="visit d-block fs-14 bg-blue c-white w-fit btn-shape">Profile</a>
+        </div>
+        <!-- End Welcome Widget -->
+        <!-- Start Quick Draft Widget -->
+        <div class="quick-draft p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Quick Draft</h2>
+          <p class="mt-0 mb-20 c-grey fs-15">Write A Draft For Your Ideas</p>
+          <form>
+            <input class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" type="text" placeholder="Title" />
+            <textarea class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" placeholder="Your Thought"></textarea>
+            <input class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape" type="submit" value="Save" />
+          </form>
+        </div>
+        <!-- End Quick Draft Widget -->
+        <!-- Start Targets Widget -->
+        <div class="targets p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Statistics</h2>
+          <div class="main-container">
+            <div class="year-stats">
+              <div class="month-group">
+                <div class="bar h-100"></div>
+                <p class="month">Jan</p>
+              </div>
+              <div class="month-group">
+                <div class="bar h-50"></div>
+                <p class="month">Feb</p>
+              </div>
+              <div class="month-group">
+                <div class="bar h-75"></div>
+                <p class="month">Mar</p>
+              </div>
+              <div class="month-group">
+                <div class="bar h-25"></div>
+                <p class="month">Apr</p>
+              </div>
+              <div class="month-group selected">
+                <div class="bar h-100"></div>
+                <p class="month">May</p>
+              </div>
+              <div class="month-group">
+                <div class="bar h-50"></div>
+                <p class="month">Jun</p>
+              </div>
+              <div class="month-group">
+                <div class="bar h-75"></div>
+                <p class="month">Jul</p>
+              </div>
+              <div class="month-group">
+                <div class="bar h-25"></div>
+                <p class="month">Aug</p>
+              </div>
+              <div class="month-group">
+                <div class="bar h-50"></div>
+                <p class="month">Sep</p>
+              </div>
+              <div class="month-group">
+                <div class="bar h-75"></div>
+                <p class="month">Oct</p>
+              </div>
+              <div class="month-group">
+                <div class="bar h-25"></div>
+                <p class="month">Nov</p>
+              </div>
+              <div class="month-group">
+                <div class="bar h-100"></div>
+                <p class="month">Dez</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- End Targets Widget -->
+        <!-- Start Ticket Widget -->
+        <div class="tickets p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">carte de statistique</h2>
+          <p class="mt-0 mb-20 c-grey fs-15">votre rapport détaillé</p>
+          <div class="d-flex txt-c gap-20 f-wrap">
+            <div class="box p-20 rad-10 fs-13 c-grey">
+              <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+              <span class="d-block c-black fw-bold fs-25 mb-5">150</span>
+              presence
+            </div>
+            <div class="box p-20 rad-10 fs-13 c-grey">
+              <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+              <span class="d-block c-black fw-bold fs-25 mb-5">2</span>
+              absence
+            </div>
+          </div>
+        </div>
+        <!-- End Ticket Widget -->
+        <!-- Start Latest News Widget -->
+        <div class="latest-news p-20 bg-white rad-10 txt-c-mobile">
+          <h2 class="mt-0 mb-20">Latest News</h2>
+          <div class="news-row d-flex align-center">
+            <img src="imgs/news-01.png" alt="" />
+            <div class="info">
+              <h3>Created SASS Section</h3>
+              <p class="m-0 fs-14 c-grey">New SASS Examples & Tutorials</p>
+            </div>
+            <div class="btn-shape bg-eee fs-13 label">3 Days Ago</div>
+          </div>
+          <div class="news-row d-flex align-center">
+            <img src="imgs/news-02.png" alt="" />
+            <div class="info">
+              <h3>Changed The Design</h3>
+              <p class="m-0 fs-14 c-grey">A Brand New Website Design</p>
+            </div>
+            <div class="btn-shape bg-eee fs-13 label">5 Days Ago</div>
+          </div>
+          <div class="news-row d-flex align-center">
+            <img src="imgs/news-03.png" alt="" />
+            <div class="info">
+              <h3>Team Increased</h3>
+              <p class="m-0 fs-14 c-grey">3 Developers Joined The Team</p>
+            </div>
+            <div class="btn-shape bg-eee fs-13 label">7 Days Ago</div>
+          </div>
+          <div class="news-row d-flex align-center">
+            <img src="imgs/news-04.png" alt="" />
+            <div class="info">
+              <h3>Added Payment Gateway</h3>
+              <p class="m-0 fs-14 c-grey">Many New Payment Gateways Added</p>
+            </div>
+            <div class="btn-shape bg-eee fs-13 label">9 Days Ago</div>
+          </div>
+        </div>
+        <!-- End Latest News Widget -->
+        <!-- Start Tasks Widget -->
+        <div class="tasks p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-20">Latest Tasks</h2>
+          <div class="task-row between-flex">
+            <div class="info">
+              <h3 class="mt-0 mb-5 fs-15">Record One New Video</h3>
+              <p class="m-0 c-grey">Record Python Create Exe Project</p>
+            </div>
+            <i class="fa-regular fa-trash-can delete"></i>
+          </div>
+          <div class="task-row between-flex">
+            <div class="info">
+              <h3 class="mt-0 mb-5 fs-15">Write Article</h3>
+              <p class="m-0 c-grey">Write Low Level vs High Level Languages</p>
+            </div>
+            <i class="fa-regular fa-trash-can delete"></i>
+          </div>
+          <div class="task-row between-flex">
+            <div class="info">
+              <h3 class="mt-0 mb-5 fs-15">Finish Project</h3>
+              <p class="m-0 c-grey">Publish Academy Programming Project</p>
+            </div>
+            <i class="fa-regular fa-trash-can delete"></i>
+          </div>
+          <div class="task-row between-flex done">
+            <div class="info">
+              <h3 class="mt-0 mb-5 fs-15">Attend The Meeting</h3>
+              <p class="m-0 c-grey">Attend The Project Business Analysis Meeting</p>
+            </div>
+            <i class="fa-regular fa-trash-can delete"></i>
+          </div>
+          <div class="task-row between-flex">
+            <div class="info">
+              <h3 class="mt-0 mb-5 fs-15">Finish Lesson</h3>
+              <p class="m-0 c-grey">Finish Teaching Flex Box</p>
+            </div>
+            <i class="fa-regular fa-trash-can delete"></i>
+          </div>
+        </div>
+        <!-- End Tasks -->
+        <!-- Start progressfor student  -->
+        <div class="search-items p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">rapport de presence </h2>
+          <div class="container1">
+            <div class="circular-progress1">
+              <span class="progress-value1">0%</span>
+            </div>
+
+            <span class="text1">SEMAINE</span>
+          </div>
+        </div>
+
+        <!-- End Top Search Word Widget -->
+        <!-- Start Latest Uploads Widget -->
+        <div class="latest-uploads p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-20">Latest Uploads</h2>
+          <ul class="m-0">
+            <li class="between-flex pb-10 mb-10">
+              <div class="d-flex align-center">
+                <img class="mr-10" src="imgs/pdf.svg" alt="" />
+                <div>
+                  <span class="d-block">my-file.pdf</span>
+                  <span class="fs-15 c-grey">Elzero</span>
+                </div>
+              </div>
+              <div class="bg-eee btn-shape fs-13">2.9mb</div>
+            </li>
+            <li class="between-flex pb-10 mb-10">
+              <div class="d-flex align-center">
+                <img class="mr-10" src="imgs/avi.svg" alt="" />
+                <div>
+                  <span class="d-block">My-Video-File.avi</span>
+                  <span class="fs-15 c-grey">Admin</span>
+                </div>
+              </div>
+              <div class="bg-eee btn-shape fs-13">4.9mb</div>
+            </li>
+            <li class="between-flex pb-10 mb-10">
+              <div class="d-flex align-center">
+                <img class="mr-10" src="imgs/psd.svg" alt="" />
+                <div>
+                  <span class="d-block">My-Psd-File.pdf</span>
+                  <span class="fs-15 c-grey">Osama</span>
+                </div>
+              </div>
+              <div class="bg-eee btn-shape fs-13">4.5mb</div>
+            </li>
+            <li class="between-flex pb-10 mb-10">
+              <div class="d-flex align-center">
+                <img class="mr-10" src="imgs/zip.svg" alt="" />
+                <div>
+                  <span class="d-block">My-Zip-File.pdf</span>
+                  <span class="fs-15 c-grey">User</span>
+                </div>
+              </div>
+              <div class="bg-eee btn-shape fs-13">8.9mb</div>
+            </li>
+            <li class="between-flex pb-10 mb-10">
+              <div class="d-flex align-center">
+                <img class="mr-10" src="imgs/dll.svg" alt="" />
+                <div>
+                  <span class="d-block">My-DLL-File.pdf</span>
+                  <span class="fs-15 c-grey">Admin</span>
+                </div>
+              </div>
+              <div class="bg-eee btn-shape fs-13">4.9mb</div>
+            </li>
+            <li class="between-flex">
+              <div class="d-flex align-center">
+                <img class="mr-10" src="imgs/eps.svg" alt="" />
+                <div>
+                  <span class="d-block">My-Eps-File.pdf</span>
+                  <span class="fs-15 c-grey">Designer</span>
+                </div>
+              </div>
+              <div class="bg-eee btn-shape fs-13">8.9mb</div>
+            </li>
+          </ul>
+        </div>
+        <!-- End Latest Uploads Widget -->
+        <!-- Start of calendar -->
+        <div class="last-project p-20 bg-white rad-10 p-relative">
+          <div class="calendar">
+            <div class="calendar-header">
+              <span class="month-picker" id="month-picker">February</span>
+              <div class="year-picker">
+                <span class="year-change" id="prev-year">
+                  <pre><</pre>
+                </span>
+                <span id="year">2021</span>
+                <span class="year-change" id="next-year">
+                  <pre>></pre>
+                </span>
+              </div>
+            </div>
+            <div class="calendar-body">
+              <div class="calendar-week-day">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="calendar-days"></div>
+            </div>
+
+            <div class="month-list"></div>
+          </div>
+
+          <script src="calendar.js"></script>
+        </div>
+        <!-- End of calendar-->
+        <!-- Start Reminders Widget -->
+        <div class="reminders p-20 bg-white rad-10 p-relative">
+          <h2 class="mt-0 mb-25">Reminders</h2>
+          <ul class="m-0">
+            <li class="d-flex align-center mt-15">
+              <span class="key bg-blue mr-15 d-block rad-half"></span>
+              <div class="pl-15 blue">
+                <p class="fs-14 fw-bold mt-0 mb-5">Check My Tasks List</p>
+                <span class="fs-13 c-grey">28/09/2022 - 12:00am</span>
+              </div>
+            </li>
+            <li class="d-flex align-center mt-15">
+              <span class="key bg-green mr-15 d-block rad-half"></span>
+              <div class="pl-15 green">
+                <p class="fs-14 fw-bold mt-0 mb-5">Check My Projects</p>
+                <span class="fs-13 c-grey">26/10/2022 - 12:00am</span>
+              </div>
+            </li>
+            <li class="d-flex align-center mt-15">
+              <span class="key bg-orange mr-15 d-block rad-half"></span>
+              <div class="pl-15 orange">
+                <p class="fs-14 fw-bold mt-0 mb-5">Call All My Clients</p>
+                <span class="fs-13 c-grey">05/11/2022 - 12:00am</span>
+              </div>
+            </li>
+            <li class="d-flex align-center mt-15">
+              <span class="key bg-red mr-15 d-block rad-half"></span>
+              <div class="pl-15 red">
+                <p class="fs-14 fw-bold mt-0 mb-5">Finish The Development Workshop</p>
+                <span class="fs-13 c-grey">20/12/2022 - 12:00am</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- End Reminders Widget -->
+        <!-- Start Latest Post Widget -->
+        <div class="latest-post p-20 bg-white rad-10 p-relative">
+          <h2 class="mt-0 mb-10">Messages</h2>
+          <div class="notifi-item">
+            <img src="imgs/avatar.png" alt="img">
+            <div class="text">
+              <h4>John Doe</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+
+          <div class="notifi-item">
+            <img src="imgs/avatar.png" alt="img">
+            <div class="text">
+              <h4>Emad Ali</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+
+          <div class="notifi-item">
+            <img src="imgs/avatar.png" alt="img">
+            <div class="text">
+              <h4>Ekram Abu </h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="notifi-item">
+            <img src="imgs/avatar.png" alt="img">
+            <div class="text">
+              <h4>Ekram Abu </h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+
+          <div class="notifi-item">
+            <img src="imgs/avatar.png" alt="img">
+            <div class="text">
+              <h4>Jane Doe</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Latest Post Widget -->
+        <!-- Start Social Media Stats Widget -->
+        <div class="social-media p-20 bg-white rad-10 p-relative">
+          <h2 class="mt-0 mb-25">Social Media Stats</h2>
+          <div class="box twitter p-15 p-relative mb-10 between-flex">
+            <i class="fa-brands fa-twitter fa-2x c-white h-full center-flex"></i>
+            <span>90K Followers</span>
+            <a class="fs-13 c-white btn-shape" href="#">Follow</a>
+          </div>
+          <div class="box facebook p-15 p-relative mb-10 between-flex">
+            <i class="fa-brands fa-facebook-f fa-2x c-white h-full center-flex"></i>
+            <span>2M Like</span>
+            <a class="fs-13 c-white btn-shape" href="#">Like</a>
+          </div>
+          <div class="box youtube p-15 p-relative mb-10 between-flex">
+            <i class="fa-brands fa-youtube fa-2x c-white h-full center-flex"></i>
+            <span>1M Subs</span>
+            <a class="fs-13 c-white btn-shape" href="#">Subscribe</a>
+          </div>
+          <div class="box linkedin p-15 p-relative mb-10 between-flex">
+            <i class="fa-brands fa-linkedin fa-2x c-white h-full center-flex"></i>
+            <span>70K Followers</span>
+            <a class="fs-13 c-white btn-shape" href="#">Follow</a>
+          </div>
+        </div>
+        <!-- Start End Media Stats Widget -->
+      </div>
+      <!-- Start Projects Table -->
+      <div class="projects p-20 bg-white rad-10 m-20">
+        <h2 class="mt-0 mb-20">Emploi</h2>
+        <div class="responsive-table">
+          <table class="fs-15 w-full">
+            <thead>
+              <tr>
+                <td>MODULE</td>
+                <td>LA CLASSE</td>
+                <td>BLOC C</td>
+                <td>JOURS</td>
+                <td>HEUR</td>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PROGRAMMATION</td>
+                <td>classe 8</td>
+                <td>BLOC C</td>
+                <td>lundi</td>
+                <td>8:30</td>
+
+
+              </tr>
+              <tr>
+                <td>PROGRAMMATION</td>
+                <td>classe 8</td>
+                <td>BLOC C</td>
+                <td>lundi</td>
+                <td>8:30</td>
+
+              </tr>
+              <tr>
+                <td>PROGRAMMATION</td>
+                <td>classe 8</td>
+                <td>BLOC C</td>
+                <td>lundi</td>
+                <td>8:30</td>
+
+              </tr>
+              <tr>
+                <td>PROGRAMMATION</td>
+                <td>classe 8</td>
+                <td>BLOC C</td>
+                <td>lundi</td>
+                <td>8:30</td>
+
+              </tr>
+              <tr>
+                <td>PROGRAMMATION</td>
+                <td>classe 8</td>
+                <td>BLOC C</td>
+                <td>lundi</td>
+                <td>8:30</td>
+
+              </tr>
+              <tr>
+                <td>PROGRAMMATION</td>
+                <td>classe 8</td>
+                <td>BLOC C</td>
+                <td>lundi</td>
+                <td>8:30</td>
+
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- End Projects Table -->
+    </div>
+  </div>
+
+  <!--Sidebar Script-->
+  <script src="js/app.js"></script>
+  <!--progress Script-->
+
+</body>
+
+</html>

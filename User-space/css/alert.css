@@ -1,0 +1,246 @@
+/***********************************start module ********************************************/
+body {
+    background: #edf1f5;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+
+.mailbox-widget .custom-tab .nav-item .nav-link {
+    border: 0;
+    color: #fff;
+    border-bottom: 3px solid transparent;
+}
+
+.mailbox-widget .custom-tab .nav-item .nav-link.active {
+    background: 0 0;
+    color: #fff;
+    border-bottom: 3px solid #2cd07e;
+}
+
+.no-wrap td,
+.no-wrap th {
+    white-space: nowrap;
+}
+
+.table td,
+.table th {
+    padding: .9375rem .4rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(120, 130, 140, .13);
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+/*************  Start Message Page  ***********/
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+
+.mailbox-widget .custom-tab .nav-item .nav-link {
+    border: 0;
+    color: #fff;
+    border-bottom: 3px solid transparent;
+}
+
+.mailbox-widget .custom-tab .nav-item .nav-link.active {
+    background: 0 0;
+    color: #fff;
+    border-bottom: 3px solid #2cd07e;
+}
+
+.no-wrap td,
+.no-wrap th {
+    white-space: nowrap;
+}
+
+.table td,
+.table th {
+    padding: .9375rem .4rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(120, 130, 140, .13);
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.row .card a {
+    text-decoration: none;
+}
+
+
+
+.container {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 35px;
+    margin: 15px;
+}
+
+.name {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.name i {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+
+.name input {
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 40px;
+}
+
+.name input::placeholder {
+    color: #bbb;
+    font-weight: 500;
+}
+
+.email {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.email i {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+
+.email input {
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 40px;
+}
+
+.email input::placeholder {
+    color: #bbb;
+    font-weight: 500;
+}
+
+.message-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.message-box i {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+
+.message-box textarea {
+    width: 100%;
+    height: 120px;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.message-box textarea::placeholder {
+    color: #bbb;
+    font-weight: 500;
+}
+
+.button {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.button button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: var(--blue-color);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: var(--blue-alt-color);
+}
+
+.message {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+/*************  End Message Page  ***********/
